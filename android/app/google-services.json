@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875693155245",
+    "project_id": "practice-e97bc",
+    "storage_bucket": "practice-e97bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875693155245:android:becb937c8b61c3ae53f724",
+        "android_client_info": {
+          "package_name": "com.example.practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5bFES01Qqi3OrKqEhm6agphXgoQxNqds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
