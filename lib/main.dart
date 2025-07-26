@@ -1,8 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/Screens/add_data_screen.dart';
 import 'package:practice/firebase_options.dart';
 import 'package:practice/helper/loader_services.dart';
 import 'package:practice/helper/snackbar_service.dart';
+import 'package:practice/provider/add_data_firestore.dart';
 import 'package:practice/provider/sigin_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -15,6 +17,7 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => SignInProvider()),
+        ChangeNotifierProvider(create: (_) => FireStoreProvider()),
       ],
       child: const MyApp(),
     ),
@@ -28,7 +31,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       scaffoldMessengerKey: SnackbarService.messengerKey,
       navigatorKey: LoaderService.navigatorKey,
-      home: const HomePageScreen(),
+      home: const AddDataTOFirebaseScreen(),
     );
   }
 }
